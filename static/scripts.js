@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function updateGrid() {
         rows.forEach((row, index) => {
             if (index === currentRowIndex) {
-                row.style.display = 'flex'; 
+                row.style.display = 'grid';
                 const videos = row.querySelectorAll('video');
                 videos.forEach(v => {
                     v.currentTime = 0;
