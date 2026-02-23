@@ -1,0 +1,1077 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Google Sans', sans-serif;
+}
+
+a {
+  color: #1772d0;
+}
+
+header {
+  margin: 4em 0px 2em 0px;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0px auto;
+}
+
+body.wide {
+  max-width: 86%;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 0.3em;
+}
+
+h1 .title-main  {
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.3em;
+  /*margin-bottom: 0.2em;*/
+}
+
+h1 .title-main > img {
+  display: block;
+  height: 1.3em;
+}
+h1 .title-main > span {
+  display: block;
+  line-height: 1.3em;
+}
+
+h1 .title-small  {
+  font-size: 0.8em;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+
+.conference {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0.4em auto 0.2em auto;
+  color: #666;
+}
+
+.paperid {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0 auto 0.6em auto;
+  color: #666;
+}
+
+/* Container: ensures centering */
+.publication-links {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Button Styling: adjusted for "Tab" appearance */
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #363636; /* Dark grey */
+  color: #ffffff;
+  /* Reduced horizontal padding for a more square/tab look */
+  padding: 10px 12px; 
+  /* Reduced border-radius for a slightly rounded square/tab */
+  border-radius: 8px; 
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.link-btn:hover {
+  background-color: #505050; 
+  color: #fff;
+}
+
+/* Icon styling */
+.link-btn .icon {
+  margin-right: 5px; /* Tightened margin */
+  font-size: 1.1rem;
+}
+
+figure {
+  margin: 1rem 0px 2rem 0px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.authors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.authors > * {
+  /*padding: 0px 1em;*/
+  flex: 0 1 20ch;
+  flex-basis: 17ch;
+  margin: 0em 0px 0.8em 0px;
+  max-width: 17ch;
+}
+
+.authors .author-name {
+  font-weight: 700;
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.authors .author-name a {
+  text-decoration: none;
+  color: black;
+}
+
+.authors .author-name a:hover {
+  color: #1772d0;
+  transition: color 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+.authors .author-affiliation {
+  display: block;
+  text-align: center;
+}
+
+.links {
+  margin-top: 0.75em;
+  margin-bottom: 1.75em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.button .ti {
+  margin-right: 0.3em;
+}
+.button {
+  border-radius: 290486px;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  font-size: 1em;
+  background-color: #363636;
+  font-weight: 600;
+  border-color: transparent;
+  color: #fff;
+
+  border-width: 1px;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(.5em - 1px);
+  padding-top: calc(.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: none;
+  display: inline-flex;
+  height: 2.5em;
+  line-height: 1.5;
+  position: relative;
+  vertical-align: top;
+  transition: background-color 0.2s ease-in-out;
+  gap: 0.4em;
+}
+a.button {
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+
+/* .video, .video-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 448px;
+}
+.video-wrapper .video-label {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.video-wrapper .video-label > * {
+  size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  height: 2.5em;
+  padding: 0.5em;
+  color: white;
+}
+.video-wrapper .video-label-with-fps > * {
+  height: 3.5em;
+}
+
+.video-wrapper .video-label > *:last-child {
+  text-align: right;
+}
+
+.video-comparison-row {
+  display: flex;
+  gap: 16px;        
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.video-comparison-row .video-wrapper {
+  width: 45%;       
+  max-width: 448px; 
+  margin: 0.5rem 0;
+} */
+
+.video {
+  display: block;
+  margin: 0.6rem auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.video-wrapper {
+  position: relative;
+  margin: 0.6rem auto;
+  width: auto;
+  max-width: 896px;
+  box-sizing: border-box;
+}
+
+.video-wrapper .video-label {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.video-wrapper .video-label > * {
+  font-size: 1.0rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  height: 2.5em;
+  padding: 0.5em;
+  color: white;
+}
+
+.video-wrapper .video-label-with-fps > * {
+  height: 3.5em;
+}
+
+.video-wrapper .video-label > *:last-child {
+  text-align: right;
+}
+
+/* .video-comparison-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-comparison-row .video-wrapper {
+  max-width: 300px;
+  margin: 0.5rem;
+}
+
+.video-wrapper video,
+.video-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+} */
+
+/* 1. Ensure the outer container centers the content */
+.video-comparison-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center; /* This centers the videos horizontally */
+  flex-wrap: wrap;
+  
+  /* If the section isn't full width, add max-width and center it: */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+
+/* 2. Set responsive width for each video block */
+.video-comparison-row .video-wrapper {
+  flex: 1 1 300px; /* Flex properties for responsive sizing */
+  max-width: 400px; /* Maximum size for desktop */
+  min-width: 250px; /* Minimum size for mobile */
+  margin: 0.5rem;
+}
+
+/* 3. Ensure the media fills the wrapper */
+.video-wrapper video,
+.video-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* 4. Ensure the label doesn't break alignment */
+.video-label {
+    /* Make sure this is not positioned absolutely and doesn't take up excessive space */
+    display: block; 
+    text-align: center;
+    margin-top: 5px;
+}
+
+.comparison-grid .row {
+  justify-items: center;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+}
+
+.cell img.thumbnail {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid white;
+  z-index: 4;
+  background: #fff;
+}
+
+.crossillum-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.crossillum-row .cell {
+  position: relative;
+  width: 22%;
+  max-width: 280px;
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.crossillum-row .cell video,
+.crossillum-row .cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.crossillum-row .cell .overlay {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30%;
+  height: 30%;
+  border-radius: 4px;
+  border: 2px solid white;
+  pointer-events: none;
+}
+
+.video, .video-wrapper-depth {
+  position: relative;
+  width: 75%;
+}
+
+/* Override depth video width */
+.video-wrapper-depth {
+  width: 95%;       /* shrink the whole container */
+  margin: 0 auto;   /* center it */
+}
+
+.depth-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;          /* spacing between the two videos */
+  flex-wrap: nowrap;  /* ensure they stay side-by-side */
+}
+
+.depth-row figure {
+  margin: 0;
+}
+/* 
+.video .video-wrapper-depth  {
+  width: 50%;       
+  display: block;
+  margin: 0 auto;    
+  border-radius: 8px;
+} */
+
+.video-wrapper-depth .video-label {
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  display: flex;
+  justify-content: space-between;
+}
+.video-wrapper-depth .video-label > * {
+  size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  height: 2.5em;
+  padding: 0.5em;
+  color: white;
+}
+.video-wrapper-depth .video-label-with-fps > * {
+  height: 3.5em;
+}
+
+.video-wrapper-depth .video-label > *:last-child {
+  text-align: right;
+}
+
+#comparison-grid-upperbound {
+  margin: 40px 0;
+}
+
+#comparison-grid-upperbound h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.comparison-grid-upperbound {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comparison-grid-upperbound .row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.comparison-grid-upperbound .cell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.comparison-grid-upperbound .media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LABEL (white box with shadow) */
+.comparison-grid-upperbound .label {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #111;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  pointer-events: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .comparison-grid-upperbound .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .comparison-grid-upperbound .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.navigation-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.navigation-controls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.megascenes-overview .views-effect-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.megascenes-overview .row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 12px;
+}
+
+.megascenes-overview .cell video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  background: #000;
+}
+
+.video-fps {
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 0.2em;
+}
+
+.video video,
+.video iframe,
+.video canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* #label-row .label {
+  background: none !important;
+  position: static !important;
+  padding: 5px 0;
+  font-weight: 600;
+  z-index: 5;
+} */
+
+  .crossillum-headers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Space between headers and first row */
+    padding: 0 1%; /* Match padding of rows if necessary */
+  }
+  .header-cell {
+    width: 23%; /* Match cell width */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+  }
+  .crossillum-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .cell {
+    width: 23%; /* Adjust as needed */
+    text-align: center;
+  }
+  .cell img, .cell video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Removed .overlay-text since it's no longer needed */
+
+.num-views-header, .num-views-grid {
+    display: grid;
+    /* This line ensures 5 equal columns */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px;
+    align-items: start;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+@media (max-width: 1200px) {
+    .num-views-header, .num-views-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Hide the header on mobile/tablet because it won't align with wrapped rows well */
+    .num-views-header {
+        display: none; 
+    }
+}
+
+/* On mobile, drop to 2 columns (3 rows per scene) */
+@media (max-width: 768px) {
+    .num-views-header, .num-views-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Container fixed to exactly 2 columns of 250px each */
+.failure-grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px; 
+    gap: 20px;
+    justify-content: center; 
+    max-width: 520px; 
+    margin: 2rem auto;
+}
+
+/* Individual cell styling (No changes needed) */
+.failure-cell {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Styling for the video/image placeholder (Correct 1:1 Square Ratio) */
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio (Square) */
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+/* Ensure images and videos fill the placeholder */
+.video-placeholder img.thumb,
+.video-placeholder video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Styles for the text-only content in Cases 3 and 4 */
+.failure-cell.text-only {
+    padding: 20px;
+    min-height: 250px; /* Gives comparable height to the video cells */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.failure-cell.text-only .text-explanation {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Style for the text content below the cells to span the full grid width */
+.full-width-text {
+    grid-column: 1 / -1; /* Span across both 250px columns */
+    padding: 1px 0;
+    margin-top: -20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Hide the unused template blocks */
+#failure-templates {
+    display: none;
+}
+
+#failure-heading {
+  /* You can adjust this value (e.g., 1.5rem, 1.2rem) */
+  font-size: 1.4rem !important; 
+  /* Using !important might be necessary to override Bulma's defaults */
+}
+/* Ensure the header cell styling still applies (it uses the shared diff-view-header-cell class) */
+/*
+.diff-view-header-cell {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 1.1em;
+}
+*/
+
+/* --- Media Queries for 5 Columns --- */
+
+/* On smaller screens, you might need to drop to fewer columns */
+@media (max-width: 1200px) {
+    /* Example: drop 5 columns down to 3 */
+    .num-views-header, .num-views-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Example: drop 3 columns down to 2 */
+    .num-views-header, .num-views-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* video.video-compare {
+  opacity: 0;
+  width: 100%;
+} */
+canvas.video-compare {
+  width: 100%;
+  cursor: col-resize;
+}
+
+.abstract p {
+  text-align: justify;
+}
+
+.references div {
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.citation {
+  color: black;
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  padding: 1.25em 1em;
+  white-space: pre;
+  word-wrap: normal;
+
+  background-color: #f5f5f5;
+  color: #4a4a4a;
+  font-size: .875em;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+  margin: 0.4em 0;
+  display: block;
+}
+
+pre code {
+  background-color: transparent;
+  font-size: 1em;
+  padding: 0;
+  word-break: normal;
+  font-weight: 400;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+  word-wrap: break-word;
+  white-space: break-spaces;
+}
+
+section {
+  margin: 2em 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(59 130 246);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(59 130 246);
+  cursor: pointer;
+}
+
+.slider-image {
+  width:20%;
+  position: relative;
+  --active-weight: 0%;
+  --current-color: color-mix(in srgb, rgb(59 130 246) var(--active-weight), #d3d3d3);
+}
+
+.slider-image::before {
+  content: " ";
+  position: relative;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--current-color);
+  display: block;
+  transform: translateX(-50%);
+}
+
+.slider-image > img {
+  width: 100%;
+  padding: 4px;
+  border: 2px solid var(--current-color);
+}
+
+@media (max-width: 1016px) {
+  .authors {
+    margin: 0px auto;
+    max-width: 70ch;
+  }
+  .authors > * {
+    flex-basis: 18ch;
+    max-width: 22ch;
+  }
+}
+
+@media (max-width:1120px) {
+  html {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .github-corner {
+    display: none;
+  }
+
+  html {
+    padding: 0px 40px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .authors > * {
+    flex: 1 1 0px;
+    flex-basis: 17ch;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    padding: 0px 20px;
+  }
+  body {
+    font-size: 12px;
+  }
+}
+
+/* --- Unique 5-Column Grid Style (g5) --- */
+
+.g5-section {
+  padding: 3rem 0;
+  background-color: transparent; /* No gray background */
+  border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+.g5-text-content {
+  text-align: justify;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.g5-text-content h2 {
+  font-size: 2.0rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 0.75rem;
+}
+
+.g5-text-content p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 1.0rem;
+  line-height: 1.5;
+}
+
+/* Grid Container */
+.g5-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between rows */
+}
+
+/* Header Row Styling */
+.g5-header-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0px;
+  margin-bottom: -5px; /* Pull closer to video row */
+}
+
+.g5-header-item {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #000000;
+  padding: -5px;
+  background-color: transparent; /* No gray box */
+}
+
+/* Content Row Styling */
+.g5-content-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+/* Cell Styling - SQUARE */
+.g5-cell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* SQUARE */
+  background: #000;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.g5-cell video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills square without stretch */
+  display: block;
+}
+
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .g5-header-row { display: none; } /* Hide headers on tablet/mobile */
+  
+  .g5-content-row {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .g5-content-row {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+/* ===== Hero / Publication Header ===== */
+
+.hero {
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.hero-body {
+  padding: 0;
+}
+
+.hero-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.publication-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, #1a73e8 0%, #7c3aed 55%, #c026d3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.publication-subtitle {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 0.4rem;
+}
+
+.publication-authors {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0.8rem 0 0.4rem;
+  color: #222;
+  line-height: 2.2;
+}
+
+.publication-authors .author-block a {
+  color: #1772d0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publication-authors .author-block a:hover {
+  text-decoration: underline;
+}
+
+.conference-row {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.3rem 0 0.8rem;
+  color: #333;
+}
+
+.publication-links .link-block {
+  display: inline-flex;
+}
+
+.external-link.button .icon {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
