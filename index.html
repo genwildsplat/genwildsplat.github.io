@@ -93,173 +93,6 @@
     </div>
 </section>
 
-  <section class="comparison-grid-sota">
-    <h2>Video Comparison Against State-of-the-Art Methods</h2>
-
-    <p style="text-align:justify;max-width:920px;margin:1.0rem auto;color:#000000;">
-      Each row shows the input view, reconstructions from WildGaussians and NexusSplats, and our GenWildSplat result. Under sparse inputs and varied lighting, our method yields more consistent novel views.
-    </p>
-    
-    <div id="grid-container">
-      <div class="comparison-grid" data-columns="4">
-        
-        <div class="row" data-row-id="1" style="display: none;">
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Oidor_Chapel_Alcala_de_Henares.mp4">Input</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/oidor_wg_1.mp4">WildGaussians</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/oidor_ns_1.mp4">NexusSplats</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/rgb_ours.mp4">GenWildSplat (Ours)</div>
-        </div>  
-        
-        <div class="row" data-row-id="2">
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Palacio_de_Viana_Cordoba.mp4">Input</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/viana_wg.mp4">WildGaussians</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/viana_ns.mp4">NexusSplats</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/viana_ours.mp4">GenWildSplat (Ours)</div>
-        </div>
-
-        <div class="row" data-row-id="3">
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Our_Lady_of_Sorrows_church_in_Rybnik_above_ground.mp4">Input</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/lady_wg.mp4">WildGaussians</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/lady_ns.mp4">NexusSplats</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/lady_ours.mp4">GenWildSplat (Ours)</div>
-        </div>
-
-        <div class="row" data-row-id="4">
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Old_Synagogue_in_Tarnow.mp4">Input</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/tarnow_wg.mp4">WildGaussians</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/tarnow_ns.mp4">NexusSplats</div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/tarnow_ours.mp4">GenWildSplat (Ours)</div>
-        </div>
-        
-        <div class="row" data-row-id="5" style="display: none;">
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Olisov_Palace.mp4"></div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/olisov_wg.mp4"></div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/olisov_ns.mp4"></div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/olisov_ours.mp4"></div>
-        </div>
-
-        <div class="row" data-row-id="6" style="display: none;">
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Palacio_Episcopal_de_Malaga.mp4"></div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/palacio_wg.mp4"></div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/palacio_ns.mp4"></div>
-          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/palacio_ours.mp4"></div>
-        </div>  
-      </div>
-    </div>
-    
-    <div class="navigation-controls" style="text-align: center; margin-top: 20px;">
-      <button id="prev-button" disabled>Previous</button>
-      <span id="page-info">1 / 6</span>
-      <button id="next-button">Next</button>
-    </div>
-  </section>
-
-<!-- <section class="g5-section">
-  <div class="g5-text-content">
-    <h2>Video Comparison Against Feed-Forward Methods</h2>
-    <p>
-Each row presents the input view, target lighting image, reconstructions from AnySplat+Style Transfer (ST) and AnySplat+DiffusionRenderer (DR), and our GenWildSplat result. Baselines were evaluated under similar computational settings and therefore, DiffusionRenderer could not be run on longer video sequences leading to view-inconsistency. However, DiffusionRenderer still outputs simply darken daytime images to approximate the target night condition, resulting in inaccurate renderings.    </p>
-  </div>
-
-  <div class="g5-container">
-    <div class="g5-header-row">
-      <div class="g5-header-item">Input View</div>
-      <div class="g5-header-item">Target Style</div>
-      <div class="g5-header-item">AnySplat + ST</div>
-      <div class="g5-header-item">AnySplat + DR</div>
-      <div class="g5-header-item">GenWildSplat (Ours)</div>
-    </div>
-
-    <div class="g5-content-row">
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/oidor.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/oidor_style.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/oidor_ccpl.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/oidor_dr.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/oidor_ours.mp4"></video>
-      </div>
-    </div>
-
-    <div class="g5-content-row">
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/tarnow.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/tarnow_style.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/tarnow_ccpl.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/tarnow_dr.mp4"></video>
-      </div>
-      <div class="g5-cell">
-        <video loop muted playsinline autoplay src="assets/feed_forward/tarnow_ours.mp4"></video>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-  <section>
-  <h2>Side-by-Side Comparison of Appearance Modeling</h2>
-
-  <p style="text-align:center;max-width:920px;margin:0.4rem auto;color:#000000;">
-  Each left-right pair compares a baseline method with GenWildSplat under identical target views and lighting conditions. </p>
-
-  <div class="depth-row">
-    <figure>
-      <div class="video-wrapper-depth">
-        <video class="video-compare" style="aspect-ratio: 1920/1080" loop muted playsinline>
-          <source src="assets/appearance_modelling/combined_wg_tarnow.mp4" type="video/mp4">
-        </video>
-        <span class="video-label"><span>WildGaussians</span><span>GenWildSplat</span></span>
-      </div>
-    </figure>
-
-    <figure>
-      <div class="video-wrapper-depth">
-        <video class="video-compare" style="aspect-ratio: 1920/1080" loop muted playsinline>
-          <source src="assets/appearance_modelling/combined_wg_olisov.mp4" type="video/mp4">
-        </video>
-        <span class="video-label"><span>NexusSplats</span><span>GenWildSplat</span></span>
-      </div>
-    </figure>
-  </div>
-</section>
-
-<section style="text-align:center; margin: 30px 0;">
-    <h2>Our GenWildSplat Framework</h2>
-
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div style="text-align:justify; margin-top: 8px; color:#000000; font-size:0.95rem;">
-                Given sparse, unposed images with varying appearance and transient objects, our approach first extracts multi-view features capturing both semantic and geometric information. Dedicated prediction heads estimate depth, camera parameters, and 3D Gaussian attributes, which are then mapped into a canonical 3D representation. A light encoder captures per-image illumination, allowing the model to modulate the Gaussians' colors consistently across views using the appearance adapter. Using a pre-trained segmentation network, transient objects are masked out, and the reconstruction loss focuses on static scene content. This enables photorealistic, view-consistent reconstructions from sparse, in-the-wild images.
-            </div>
-            <video id="co3d-grid" 
-                   poster="" 
-                   width="100%" 
-                   autoplay 
-                   loop 
-                   muted 
-                   controls 
-                   playsinline 
-                   preload="metadata"
-                   onloadedmetadata="this.playbackRate=0.25; this.defaultPlaybackRate=0.25;">
-                <source src="assets/method.mp4" type="video/mp4">
-            </video>
-            
-            
-        </div>
-    </div>
-</section>
 
 <section>
   <h2>Constant Appearance Renderings</h2>
@@ -870,66 +703,6 @@ showSet(0);
   }
 </style>
 
-<script>
-  const grids = Array.from(document.querySelectorAll('.comparison-grid'));
-
-  grids.forEach(grid => {
-    const firstRow = grid.querySelector('.row');
-    const colCount = grid.dataset.columns ? parseInt(grid.dataset.columns, 10) : null;
-
-    if (firstRow) {
-      const titles = Array.from(firstRow.children).map(c => (c.textContent || '').trim());
-
-      if (!grid.querySelector('.grid-header')) {
-        const header = document.createElement('div');
-        header.className = 'grid-header';
-
-        if (colCount === 4) header.style.gridTemplateColumns = 'repeat(4, 1fr)';
-        else if (colCount === 5) header.style.gridTemplateColumns = 'repeat(5, 1fr)';
-
-        for (let i = 0; i < (colCount || titles.length); ++i) {
-          const t = document.createElement('div');
-          t.className = 'col-title';
-          t.textContent = titles[i] || '';
-          header.appendChild(t);
-        }
-
-        grid.insertBefore(header, grid.firstChild);
-      }
-    }
-
-    const cells = Array.from(grid.querySelectorAll('.cell'));
-    cells.forEach(c => { c.textContent = ''; });
-
-    cells.forEach(cell => {
-      const type = cell.dataset.type;
-      const src = cell.dataset.src;
-      if (!src) return;
-
-      if (type === 'img') {
-        const img = document.createElement('img');
-        img.src = src;
-        img.loading = 'lazy';
-        img.alt = '';
-        cell.appendChild(img);
-      } else if (type === 'video') {
-        const vid = document.createElement('video');
-        vid.src = src;
-        vid.autoplay = false; // Handled by observer now
-        vid.muted = true;
-        vid.loop = true;
-        vid.playsInline = true;
-        vid.preload = "none"; // Important for performance
-        cell.appendChild(vid);
-        
-        // Register with global observer
-        if(window.sharedVideoObserver) {
-            window.sharedVideoObserver.observe(vid);
-        }
-      }
-    });
-  });
-</script>
 
     <!-- <section class="diff-view-sota">
     <h2 style="text-align:center;">Effect of number of views</h2>
@@ -1306,6 +1079,32 @@ showSet(0);
   </div>
 </section>
 
+<section style="text-align:center; margin: 30px 0;">
+    <h2>Our GenWildSplat Framework</h2>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div style="text-align:justify; margin-top: 8px; color:#000000; font-size:0.95rem;">
+                Given sparse, unposed images with varying appearance and transient objects, our approach first extracts multi-view features capturing both semantic and geometric information. Dedicated prediction heads estimate depth, camera parameters, and 3D Gaussian attributes, which are then mapped into a canonical 3D representation. A light encoder captures per-image illumination, allowing the model to modulate the Gaussians' colors consistently across views using the appearance adapter. Using a pre-trained segmentation network, transient objects are masked out, and the reconstruction loss focuses on static scene content. This enables photorealistic, view-consistent reconstructions from sparse, in-the-wild images.
+            </div>
+            <video id="co3d-grid-method" 
+                   poster="" 
+                   width="100%" 
+                   autoplay 
+                   loop 
+                   muted 
+                   controls 
+                   playsinline 
+                   preload="metadata"
+                   onloadedmetadata="this.playbackRate=0.25; this.defaultPlaybackRate=0.25;">
+                <source src="assets/method.mp4" type="video/mp4">
+            </video>
+            
+            
+        </div>
+    </div>
+</section>
+
 <section id="views-effect-section" class="megascenes-overview">
   <h1 class="section-title">Curated Scenes from MegaScenes Dataset</h1>
   <p style="text-align:justify;max-width:1000px;margin:0.4rem auto;color:#000000;">
@@ -1511,6 +1310,94 @@ showSet(0);
 
       <div id="grid" class="video-grid"></div>
     </section>
+
+    <section class="comparison-grid-sota">
+    <h2>Video Comparison Against State-of-the-Art Methods</h2>
+
+    <p style="text-align:justify;max-width:920px;margin:1.0rem auto;color:#000000;">
+      Each row shows the input view, reconstructions from WildGaussians and NexusSplats, and our GenWildSplat result. Under sparse inputs and varied lighting, our method yields more consistent novel views.
+    </p>
+    
+    <div id="grid-container">
+      <div class="comparison-grid" data-columns="4">
+        
+        <div class="row" data-row-id="1" style="display: none;">
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Oidor_Chapel_Alcala_de_Henares.mp4">Input</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/oidor_wg_1.mp4">WildGaussians</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/oidor_ns_1.mp4">NexusSplats</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/rgb_ours.mp4">GenWildSplat (Ours)</div>
+        </div>  
+        
+        <div class="row" data-row-id="2">
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Palacio_de_Viana_Cordoba.mp4">Input</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/viana_wg.mp4">WildGaussians</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/viana_ns.mp4">NexusSplats</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/viana_ours.mp4">GenWildSplat (Ours)</div>
+        </div>
+
+        <div class="row" data-row-id="3">
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Our_Lady_of_Sorrows_church_in_Rybnik_above_ground.mp4">Input</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/lady_wg.mp4">WildGaussians</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/lady_ns.mp4">NexusSplats</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/lady_ours.mp4">GenWildSplat (Ours)</div>
+        </div>
+
+        <div class="row" data-row-id="4">
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Old_Synagogue_in_Tarnow.mp4">Input</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/tarnow_wg.mp4">WildGaussians</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/tarnow_ns.mp4">NexusSplats</div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/tarnow_ours.mp4">GenWildSplat (Ours)</div>
+        </div>
+        
+        <div class="row" data-row-id="5" style="display: none;">
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Olisov_Palace.mp4"></div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/olisov_wg.mp4"></div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/olisov_ns.mp4"></div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/olisov_ours.mp4"></div>
+        </div>
+
+        <div class="row" data-row-id="6" style="display: none;">
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/Palacio_Episcopal_de_Malaga.mp4"></div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/palacio_wg.mp4"></div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/palacio_ns.mp4"></div>
+          <div class="cell" data-type="video" data-src="assets/comparison_sota_videos/palacio_ours.mp4"></div>
+        </div>  
+      </div>
+    </div>
+    
+    <div class="navigation-controls" style="text-align: center; margin-top: 20px;">
+      <button id="prev-button" disabled>Previous</button>
+      <span id="page-info">1 / 6</span>
+      <button id="next-button">Next</button>
+    </div>
+  </section>
+
+  <section>
+  <h2>Side-by-Side Comparison of Appearance Modeling</h2>
+
+  <p style="text-align:center;max-width:920px;margin:0.4rem auto;color:#000000;">
+  Each left-right pair compares a baseline method with GenWildSplat under identical target views and lighting conditions. </p>
+
+  <div class="depth-row">
+    <figure>
+      <div class="video-wrapper-depth">
+        <video class="video-compare" style="aspect-ratio: 1920/1080" loop muted playsinline>
+          <source src="assets/appearance_modelling/combined_wg_tarnow.mp4" type="video/mp4">
+        </video>
+        <span class="video-label"><span>WildGaussians</span><span>GenWildSplat</span></span>
+      </div>
+    </figure>
+
+    <figure>
+      <div class="video-wrapper-depth">
+        <video class="video-compare" style="aspect-ratio: 1920/1080" loop muted playsinline>
+          <source src="assets/appearance_modelling/combined_wg_olisov.mp4" type="video/mp4">
+        </video>
+        <span class="video-label"><span>NexusSplats</span><span>GenWildSplat</span></span>
+      </div>
+    </figure>
+  </div>
+</section>
 
   <section id="failure-gallery">
   <h1 class="section-title">Analysis of Failure Cases</h1>
@@ -1799,6 +1686,123 @@ showSet(0);
     </script>
 
     <script src="static/scripts.js"></script>
+
+    <script>
+  (function buildComparisonGrids() {
+    const grids = Array.from(document.querySelectorAll('.comparison-grid'));
+
+    grids.forEach(grid => {
+      const firstRow = grid.querySelector('.row');
+      const colCount = grid.dataset.columns ? parseInt(grid.dataset.columns, 10) : null;
+
+      if (firstRow) {
+        const titles = Array.from(firstRow.children).map(c => (c.textContent || '').trim());
+        if (!grid.querySelector('.grid-header')) {
+          const header = document.createElement('div');
+          header.className = 'grid-header';
+          if (colCount === 4) header.style.gridTemplateColumns = 'repeat(4, 1fr)';
+          else if (colCount === 5) header.style.gridTemplateColumns = 'repeat(5, 1fr)';
+          for (let i = 0; i < (colCount || titles.length); ++i) {
+            const t = document.createElement('div');
+            t.className = 'col-title';
+            t.textContent = titles[i] || '';
+            header.appendChild(t);
+          }
+          grid.insertBefore(header, grid.firstChild);
+        }
+      }
+
+      const cells = Array.from(grid.querySelectorAll('.cell'));
+      cells.forEach(c => { c.textContent = ''; });
+
+      cells.forEach(cell => {
+        const type = cell.dataset.type;
+        const src = cell.dataset.src;
+        if (!src) return;
+
+        if (type === 'img') {
+          const img = document.createElement('img');
+          img.src = src;
+          img.loading = 'lazy';
+          img.alt = '';
+          cell.appendChild(img);
+        } else if (type === 'video') {
+          const vid = document.createElement('video');
+          vid.src = src;
+          vid.muted = true;
+          vid.loop = true;
+          vid.playsInline = true;
+          vid.autoplay = true;          // <-- FIX: was false, now true
+          vid.preload = 'metadata';     // <-- FIX: was 'none', now 'metadata' so first frame paints
+          cell.appendChild(vid);
+          if (window.sharedVideoObserver) {
+            window.sharedVideoObserver.observe(vid);
+          } else {
+            vid.play().catch(() => {});
+          }
+        }
+      });
+    });
+
+    // ----- Re-run the SOTA pagination AFTER videos are populated -----
+    // The version in scripts.js ran on DOMContentLoaded (before this builder),
+    // so its `rows` snapshot had empty cells. We rebind it here.
+    const rows = document.querySelectorAll('#grid-container .comparison-grid .row');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+    const pageInfo = document.getElementById('page-info');
+    const totalRows = rows.length;
+    let currentRowIndex = 0;
+
+    if (totalRows === 0) {
+      if (pageInfo) pageInfo.textContent = '0 / 0';
+      return;
+    }
+
+    // Clear inline display:none set in the HTML; JS is now the source of truth.
+    rows.forEach(r => { r.style.display = ''; });
+
+    function updateGrid() {
+      rows.forEach((row, index) => {
+        const videos = row.querySelectorAll('video');
+        if (index === currentRowIndex) {
+          row.style.display = 'grid';
+          videos.forEach(v => {
+            try { v.currentTime = 0; } catch (e) {}
+            v.play().catch(() => {});
+            if (window.sharedVideoObserver) window.sharedVideoObserver.observe(v);
+          });
+        } else {
+          row.style.display = 'none';
+          videos.forEach(v => v.pause());
+        }
+      });
+      if (pageInfo) pageInfo.textContent = `${currentRowIndex + 1} / ${totalRows}`;
+      if (prevButton) prevButton.disabled = currentRowIndex === 0;
+      if (nextButton) nextButton.disabled = currentRowIndex === totalRows - 1;
+    }
+
+    // Replace prev/next buttons to wipe the stale listener bound in scripts.js
+    // (that listener captured an old `rows` list with empty cells).
+    if (nextButton) {
+      const newNext = nextButton.cloneNode(true);
+      nextButton.parentNode.replaceChild(newNext, nextButton);
+      newNext.addEventListener('click', () => {
+        if (currentRowIndex < totalRows - 1) { currentRowIndex++; updateGrid(); }
+      });
+    }
+    if (prevButton) {
+      const newPrev = prevButton.cloneNode(true);
+      prevButton.parentNode.replaceChild(newPrev, prevButton);
+      newPrev.addEventListener('click', () => {
+        if (currentRowIndex > 0) { currentRowIndex--; updateGrid(); }
+      });
+    }
+
+    updateGrid();
+  })();
+</script>
+
 
   </body>
 </html>
